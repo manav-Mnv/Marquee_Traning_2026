@@ -59,14 +59,52 @@ public class TypePromotion {
     }
 }
 
+// In this example, the int variable num1 is promoted to a double before the addition 
+// operation is performed with num2, which is already a double. The result of the 
+// expression is a double, and it can accommodate the values without any loss of data. 
+// Type promotion helps ensure that operations involving different data types are handled 
+// correctly and that the results are accurate.
 
 
+//Relationn ship btween Boolean and integer in Java
+// In Java, there is no direct relationship between boolean and integer data types.
+// A boolean variable can only hold two values: true or false, 
+// while an integer variable can hold a wide range of numeric values.
+// However, in some cases, you may want to represent boolean values as integers,
+// where true is represented as 1 and false is represented as 0. This can be
+// done using a simple conditional expression or by using the ternary operator.
+//Example of representing boolean as integer:
+// Using conditional expression
+//boolean isTrue = true;
+//int intValue = isTrue ? 1 : 0; // Converts boolean to integer
 
 
+//How to take intput in Java
+// In Java, you can take input from the user using the Scanner class from the java.util package.
+// Here is an example of how to take input in Java:
+import java.util.Scanner; // Required import statement
 
-
-
-
+public class InputExample {
+    public static void main(String[] args) {
+        // Create a Scanner object linked to standard input (keyboard)
+        Scanner scanner = new Scanner(System.in); 
+        
+        System.out.print("Enter an integer: ");
+        
+        // Check for integer input to avoid InputMismatchException errors
+        if (scanner.hasNextInt()) {
+            int userInput = scanner.nextInt();
+            System.out.println("You entered: " + userInput);
+        } else {
+            System.out.println("That's not a valid integer.");
+        }
+        
+        scanner.close(); 
+    }
+}
+// In this example, we create a Scanner object that is linked to the standard input stream (the keyboard).
+// We then prompt the user to enter an integer and use the hasNextInt() method to check if the input 
+// is a valid integer.
 
 
 
