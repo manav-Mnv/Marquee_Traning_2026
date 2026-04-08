@@ -102,9 +102,132 @@ public class InputExample {
         scanner.close(); 
     }
 }
+
+//output
+//Enter an integer: 42  
+//You entered: 42
+
+
+
+
+
 // In this example, we create a Scanner object that is linked to the standard input stream (the keyboard).
 // We then prompt the user to enter an integer and use the hasNextInt() method to check if the input 
 // is a valid integer.
+
+
+//input FLoat and outout as float 
+import java.util.Scanner; // Required import statement
+    public class FloatInputExample {
+        public static void main(String[] args) {
+            // Create a Scanner object linked to standard input (keyboard)
+            Scanner scanner = new Scanner(System.in); 
+            
+            System.out.print("Enter a float value: ");
+            
+            // Check for float input to avoid InputMismatchException errors
+            if (scanner.hasNextFloat()) {
+                float userInput = scanner.nextFloat();
+                System.out.println("You entered: " + userInput);
+            } else {
+                System.out.println("That's not a valid float value.");
+            }
+            
+            scanner.close(); 
+        }
+    }
+
+
+//output 
+//Enter a float value: 3.14
+//You entered: 3.14
+
+
+//iNT AS INPUT AND OUTPUT AS FLOAT
+import java.util.Scanner; // Required import statement
+    public class IntToFloatInputExample {
+        public static void main(String[] args) {
+            // Create a Scanner object linked to standard input (keyboard)
+            Scanner scanner = new Scanner(System.in); 
+            
+            System.out.print("Enter an integer value: ");
+            
+            // Check for integer input to avoid InputMismatchException errors
+            if (scanner.hasNextInt()) {
+                int userInput = scanner.nextInt();
+                float floatValue = (float) userInput; // Convert int to float
+                System.out.println("You entered: " + floatValue);
+            } else {
+                System.out.println("That's not a valid integer value.");
+            }
+            
+            scanner.close(); 
+        }
+    }
+
+//output
+//Enter an integer value: 10    
+//You entered: 10.0
+
+////declration and initialization of variable in java
+// In Java, you can declare and initialize a variable in a single line. Here are some examples:
+// Declaring and initializing an integer variable
+int myInt = 10;
+// Declaring and initializing a float variable
+float myFloat = 3.14f;
+// Declaring and initializing a boolean variable
+boolean myBoolean = true;
+// Declaring and initializing a String variable
+String myString = "Hello, World!";
+// In these examples, we declare variables of different data types (int, float, boolean, and String) and 
+// initialize them with values in a single line. This is a common practice in Java to make the code more concise and readable.
+
+
+//Variable in Java  
+// In Java, a variable is a container that holds data that can be changed during the execution of a program.
+// Variables have a specific data type that determines the kind of data they can hold, such as int, float, boolean, String, etc.
+// To declare a variable in Java, you need to specify the data type followed by the variable
+// name. You can also initialize the variable with a value at the time of declaration. 
+// Here are some examples of variable declaration and initialization in Java:
+// Declaring and initializing an integer variable
+int myInt = 10;
+// Declaring and initializing a float variable
+float myFloat = 3.14f;
+// Declaring and initializing a boolean variable
+boolean myBoolean = true;
+// Declaring and initializing a String variable
+String myString = "Hello, World!";
+// In these examples, we declare variables of different data types (int, float, boolean, and String) and
+// initialize them with values. You can also declare a variable without initializing it, and then assign a value to it later in the code. For example:
+// Declaring a variable without initialization
+int myInt;
+// Assigning a value to the variable later
+myInt = 10;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
