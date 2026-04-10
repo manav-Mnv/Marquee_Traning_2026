@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprehensive Student Registration Form</title>
+    <style>
+        /* Basic styling to make the form look neat and aligned */
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        fieldset { margin-bottom: 20px; border: 1px solid #ccc; padding: 15px; border-radius: 5px; }
+        legend { font-weight: bold; background: #eee; padding: 3px 10px; border: 1px solid #ccc; }
+        .form-group { margin-bottom: 12px; }
+        label { display: inline-block; width: 160px; font-weight: bold; vertical-align: top; }
+        .inline-label { display: inline; width: auto; font-weight: normal; }
+    </style> 
+    </head>
+<body>
+
+    <h2>Student Registration Form</h2>
+    
+    <form action="/submit_endpoint" method="post" enctype="multipart/form-data">
+        
+        <fieldset>
+            <legend>Account Details</legend>
+            
+            <div class="form-group">
+                <label for="student_name">Student Name:</label>
+                <input type="text" id="student_name" name="student_name" placeholder="Full Name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Create a secure password" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="student@example.com" required>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="123-456-7890">
+            </div>
+
+            <div class="form-group">
+                <label>Gender:</label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male" class="inline-label">Male</label>
+                
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female" class="inline-label">Female</label>
+                
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other" class="inline-label">Other</label>
+            </div>
+
+            <div class="form-group">
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" min="10" max="100" step="1">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Dates & Scheduling (Different Ways)</legend>
+
+            <div class="form-group">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob">
+            </div>
+
+            <div class="form-group">
+                <label for="enrollment_month">Enrollment Month:</label>
+                <input type="month" id="enrollment_month" name="enrollment_month">
+            </div>
+
+            <div class="form-group">
+                <label for="interview_time">Preferred Interview Time:</label>
+                <input type="time" id="interview_time" name="interview_time">
+            </div>
+            
+            <div class="form-group">
+                <label for="orientation">Orientation Date & Time:</label>
+                <input type="datetime-local" id="orientation" name="orientation">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Other Form Elements</legend>
+
+            <div class="form-group">
+                <label for="department">Department (Select):</label>
+                <select id="department" name="department">
+                    <option value="" disabled selected>Select an option...</option>
+                    <optgroup label="Sciences">
+                        <option value="cs">Computer Science</option>
+                        <option value="bio">Biology</option>
+                    </optgroup>
+                    <optgroup label="Arts">
+                        <option value="eng">English</option>
+                        <option value="his">History</option>
+                    </optgroup>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="skills">Skills (Datalist):</label>
+                <input list="skill_options" id="skills" name="skills" placeholder="Type or select a skill...">
+                <datalist id="skill_options">
+                    <option value="HTML">
+                    <option value="CSS">
+                    <option value="JavaScript">
+                    <option value="Python">
+                </datalist>
+            </div>
+
+            <div class="form-group">
+                <label for="resume">Upload Resume:</label>
+                <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx">
+            </div>
+
+            <div class="form-group">
+                <label for="portfolio">Portfolio Website:</label>
+                <input type="url" id="portfolio" name="portfolio" placeholder="https://...">
+            </div>
+
+            <div class="form-group">
+                <label for="theme_color">Profile Color:</label>
+                <input type="color" id="theme_color" name="theme_color" value="#4CAF50">
+            </div>
+
+            <div class="form-group">
+                <label for="satisfaction">Expected Grade (Range):</label>
+                <input type="range" id="satisfaction" name="satisfaction" min="10" max="20" value="15">
+            </div>
+
+            <div class="form-group">
+                <label for="comments">Additional Comments:</label>
+                <textarea id="comments" name="comments" rows="4" cols="40" placeholder="Write any notes here..."></textarea>
+            </div>
+        </fieldset>
+
+        <div class="form-group">
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms" class="inline-label">I accept the terms and conditions</label>
+        </div>
+
+        <div class="form-group" style="margin-top: 20px;">
+            <input type="submit" value="Submit Form" style="padding: 10px 20px; cursor: pointer;">
+            <input type="reset" value="Reset All" style="padding: 10px 20px; cursor: pointer;">
+        </div>
+        
+
+    </form>
+</body>
+</html>

@@ -1,265 +1,205 @@
-    <!-- COpy the strucutre of Flipkart.com website  wibntou css onlty the framwork add insted of loink text where it use button juts out a button as name  
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flipkart Clone</title>
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+            background-color: #f1f3f6;
+        }
 
-    use this in as image https://slp-statics.astockcdn.net/static_assets/staging/26winter/EMEA_homepage/Card1_1110369392.jpg?width=580 ebry box 
-    -->
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Flipkart Skeleton Structure</title>
-    </head>
-    <body>
+        /* Header */
+        .header {
+            background-color: #2874f0;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
 
-        <header>
-            <div class="top-bar">
-                <div class="logo-container">
-                    <a href="/">Flipkart</a>
-                    <a href="/travel">Travel</a>
-                </div>
+        .search-box {
+            margin-top: 10px;
+        }
 
-                <div class="search-container">
-                    <form action="/search">
-                        <input type="text" placeholder="Search for Products, Brands and More">
-                        <button type="submit">Search</button>
-                    </form>
-                </div>
+        input {
+            padding: 5px;
+            width: 200px;
+        }
 
-                <div class="user-actions">
-                    <div class="profile-dropdown">Manav</div>
-                    <div class="more-dropdown">More</div>
-                    <div class="cart">Cart (0)</div>
-                </div>
+        button {
+            padding: 5px;
+            background: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Navbar */
+        .nav {
+            background: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .nav a {
+            margin: 10px;
+            text-decoration: none;
+            color: black;
+        }
+
+        /* Products */
+        .products {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 10px;
+            width: 150px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        .card img {
+            width: 100%;
+        }
+
+        .price {
+            color: green;
+        }
+
+        .flip-logo {
+            background-color: gold;
+            padding: 3px;
+            color: black;
+            border-radius: 5px;
+        }
+
+        .travel {
+            background-color: white;
+            padding: 3px;
+            color: black;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="header">
+        <div style="display: flex;">
+            <div class="flip-logo">
+                <h2>Flipkart</h2>
             </div>
+            <div class="travel">
+                <h2>Travel</h2>
+            </div>
+        </div>
+        <div class="search-box">
+            <input type="text" placeholder="Search products">
+            <button>Search</button>
+        </div>
+    </div>
 
-            <nav class="category-nav">
-                <ul>
-                    <li><a href="#">For You</a></li>
-                    <li><a href="#">Fashion</a></li>
-                    <li><a href="#">Mobiles</a></li>
-                    <li><a href="#">Beauty</a></li>
-                    <li><a href="#">Electronics</a></li>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Appliances</a></li>
-                    <li><a href="#">Toys & Baby</a></li>
-                    <li><a href="#">Food & Health</a></li>
-                    <li><a href="#">Auto Accessories</a></li>
-                    <li><a href="#">Sports & Fitness</a></li>
-                    <li><a href="#">Books & More</a></li>
-                    <li><a href="#">Furniture</a></li>
-                </ul>
-            </nav>
-        </header>
+    <!-- Navbar -->
+    <div class="nav">
+        <a href="#">Mobiles</a>
+        <a href="#">Fashion</a>
+        <a href="#">Electronics</a>
+        <a href="#">Home</a>
+    </div>
 
-        <main>
+    <!-- Products -->
+    <div class="products">
 
-            <section class="hero-banners">
-                <div class="banner-track">
-                    <div class="banner-item"><img alt="vivo T5 Pro Banner"></div>
-                    <div class="banner-item"><img alt="Nova 2 Banner"></div>
+        <div class="card">
+            <img src="https://www.apple.com/newsroom/images/2025/02/apple-debuts-iphone-16e-a-powerful-new-member-of-the-iphone-16-family/geo/article/Apple-iPhone-16e-hero-GEO-250219_inline.jpg.medium.jpg">
+            <p>Phone</p>
+            <p class="price">₹10,000</p>
+        </div>
+
+        <div class="card">
+            <img src="https://media.endclothing.com/media/catalog/product/1/4/14_08_2023_jd_id2056_1.jpg">
+            <p>Shoes</p>
+            <p class="price">₹2,000</p>
+        </div>
+
+        <div class="card">
+            <img src="https://i5.walmartimages.com/seo/Sony-WH-1000XM5-The-Best-Wireless-Noise-Canceling-Headphones-Black_7384c879-1d54-47e8-9876-1d7adadcf0a5.542c245c25d295b30fa5820eacea4450.jpeg">
+            <p>Headphones</p>
+            <p class="price">₹1,500</p>
+        </div>
+
+    </div>
+
+    <footer>
+        <div style="background-color: black; color: white;">
+            <div class="upper" style="display: flex;">
+                <div class="left" style="display: flex;">
+                    <div>
+                        <h6>ABOUT</h6>
+                        <ul>
+                            <li>Contact Us</li>
+                            <li>About Us</li>
+                            <li>Careers</li>
+                            <li>Flipkart Stories</li>
+                            <li>Press</li>
+                            <li>Flipkart Wholesale</li>
+                        </ul>
                     </div>
-            </section>
-
-            <section class="horizontal-scroll-section">
-                <div class="section-header">
-                    <h2>Top Selection</h2>
-                    <button class="view-all-arrow">→</button>
+                    <div>
+                        <h6>GROUP COMPANIES</h6>
+                        <ul>
+                            <li>Myntra</li>
+                            <li>Cleartrip</li>
+                            <li>Shopsy</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h6>HELP</h6>
+                        <ul>
+                            <li>Payments</li>
+                            <li>Shipping</li>
+                            <li>Cancellation & Returns</li>
+                            <li>FAQ</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h6>CONSUMER POLICY</h6>
+                        <ul>
+                            <li>Cancellation & Returns</li>
+                            <li>Terms Of Use</li>
+                            <li>Security</li>
+                            <li>Privacy</li>
+                            <li>Sitemap</li>
+                            <li>Grievance Redressal</li>
+                            <li>EPR Compliance</li>
+                            <li>FSSAI Food Safety Connect App</li>
+                        </ul>
+                    </div>
                 </div>
-                
-                <div class="scrollable-product-row">
-                    <div class="product-card">
-                        <div class="product-image"><img alt="Trimmers"></div>
-                        <div class="product-title">Trimmers</div>
-                        <div class="product-offer">Special offer</div>
+                <div class="right">
+                    <div>
+                        <h6>Mail Us:</h6>
                     </div>
-                    
-                    <div class="product-card">
-                        <div class="product-image"><img alt="Sticky Notes"></div>
-                        <div class="product-title">Sticky Notes</div>
-                        <div class="product-offer">Hand-picked</div>
+                    <div>
+                        <h6>Registered Office Address:</h6>
                     </div>
-
-                    <div class="product-card">
-                        <div class="product-image"><img alt="Sunglasses"></div>
-                        <div class="product-title">Sunglasses</div>
-                        <div class="product-offer">Special offer</div>
-                    </div>
-                    
-                    <div class="product-card">
-                        <div class="product-image"><img alt="Rings"></div>
-                        <div class="product-title">Rings</div>
-                        <div class="product-offer">Special offer</div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="brands-spotlight-section">
-                <div class="section-header">
-                    <h2>Brands in Spotlight</h2>
-                </div>
-                
-                <div class="brand-grid">
-                    <div class="brand-card">
-                        <div class="brand-logo">Ambrane</div>
-                        <div class="brand-image"><img alt="Powerbanks"></div>
-                        <div class="brand-text">From ₹798* Powerbanks</div>
-                    </div>
-                    
-                    <div class="brand-card">
-                        <div class="brand-logo">Tiara</div>
-                        <div class="brand-image"><img alt="Instant charm"></div>
-                        <div class="brand-text">Shop now Instant charm</div>
-                    </div>
-
-                    <div class="brand-card">
-                        <div class="brand-logo">GOBOULT</div>
-                        <div class="brand-image"><img alt="Audio"></div>
-                        <div class="brand-text">Up to 95% Off Biggest price drop</div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="horizontal-scroll-section">
-                <div class="section-header">
-                    <h2>Wedding Essentials</h2>
-                    <button class="view-all-arrow">→</button>
-                </div>
-                
-                <div class="scrollable-product-row">
-                    <div class="product-card">
-                        <div class="product-image"><img alt="Face Wash"></div>
-                        <div class="product-title">Face Wash</div>
-                        <div class="product-offer">Min. 50% Off</div>
-                    </div>
-                    </div>
-            </section>
-
-            <section class="more-products-section">
-                <div class="section-header">
-                    <h2>More products for you</h2>
-                </div>
-                
-                <div class="product-grid-layout">
-                    <div class="detailed-product-card">
-                        <div class="image-wrapper"><img alt="Nothing Phone"></div>
-                        <div class="rating-badge">4.6 ★ (484)</div>
-                        <div class="product-details">
-                            <div class="title">Nothing Phone (4a) Pro</div>
-                            <div class="price-container">
-                                <span class="current-price">₹45,999</span>
-                                <span class="original-price"><del>₹48,999</del></span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="detailed-product-card">
-                        <div class="image-wrapper"><img alt="Fossil Watch"></div>
-                        <div class="rating-badge">4.4 ★ (18)</div>
-                        <div class="product-details">
-                            <div class="title">FOSSIL Machine Analog Watch</div>
-                            <div class="price-container">
-                                <span class="current-price">₹8,596</span>
-                                <span class="original-price"><del>₹10,995</del></span>
-                            </div>
-                        </div>
-                    </div>
-                    </div>
-            </section>
-
-            <section class="seo-description-block">
-                <h1>Flipkart: India's Ultimate One-Stop Online Shopping Destination</h1>
-                <p>Description text about Flipkart's history, offerings, electronics, appliances, fashion, etc...</p>
-            </section>
-
-        </main>
-
-        <footer>
-            <div class="footer-links-area">
-                
-                <div class="footer-column">
-                    <h3>ABOUT</h3>
-                    <ul>
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="#">Flipkart Stories</a></li>
-                        <li><a href="#">Press</a></li>
-                        <li><a href="#">Corporate Information</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-column">
-                    <h3>GROUP COMPANIES</h3>
-                    <ul>
-                        <li><a href="#">Myntra</a></li>
-                        <li><a href="#">Cleartrip</a></li>
-                        <li><a href="#">Shopsy</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-column">
-                    <h3>HELP</h3>
-                    <ul>
-                        <li><a href="#">Payments</a></li>
-                        <li><a href="#">Shipping</a></li>
-                        <li><a href="#">Cancellation & Returns</a></li>
-                        <li><a href="#">FAQ</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-column">
-                    <h3>CONSUMER POLICY</h3>
-                    <ul>
-                        <li><a href="#">Cancellation & Returns</a></li>
-                        <li><a href="#">Terms Of Use</a></li>
-                        <li><a href="#">Security</a></li>
-                        <li><a href="#">Privacy</a></li>
-                        <li><a href="#">Sitemap</a></li>
-                        <li><a href="#">Grievance Redressal</a></li>
-                        <li><a href="#">EPR Compliance</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-divider"></div>
-
-                <div class="footer-column address-column">
-                    <div class="mail-us">
-                        <h3>Mail Us:</h3>
-                        <p>Flipkart Internet Private Limited,<br> Buildings Alyssa, Begonia & Clove...</p>
-                    </div>
-                    <div class="registered-office">
-                        <h3>Registered Office Address:</h3>
-                        <p>Flipkart Internet Private Limited,<br> Buildings Alyssa, Begonia & Clove...</p>
-                        <p>Telephone: 044-45614700</p>
+                    <div>
+                        <h6>Social:</h6>
                     </div>
                 </div>
             </div>
-
-            <div class="footer-bottom-ribbon">
-                <div class="ribbon-links">
-                    <a href="#">Become a Seller</a>
-                    <a href="#">Advertise</a>
-                    <a href="#">Gift Cards</a>
-                    <a href="#">Help Center</a>
-                </div>
-                
-                <div class="copyright">
-                    &copy; 2007-2026 Flipkart.com
-                </div>
-                
-                <div class="payment-methods">
-                    <img src="payment-icons.png" alt="Payment Methods">
-                </div>
+            <div class="lower">
+                <a href="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.pngitem.com%2Fpimgs%2Fm%2F118-1186311_chimpanzee-sticking-out-tongue-happy-monkey-hd-png.png&f=1&nofb=1&ipt=cf26f021e4b91395559fc4f7099984f4bd367a2ac4ffe3aff9586eaa784573c0">Become a Seller</a>
+                <a href="#">Advertise</a>
+                <a href="#">Gift Cards</a>
+                <a href="#">Help Center</a>
+                <a href="#">&copy; 2007-2024 Flipkart.com</a>
             </div>
-        </footer>
+        </div>
+    </footer>
 
-    </body>
-    </html>
-
-
-
-
-
-
-
-    
+</body>
+</html>
