@@ -1,0 +1,132 @@
+/*
+
+CSS-CSS (Cascading Style Sheets) 
+it is a stylesheet language used to describe the visual presentation and layout 
+of a document written in a markup language, most commonly HTML
+
+
+lets divided into three part :
+1.Box model
+2.Properties
+3.Animation
+
+1.  BOX MODEL !!
+
+-- The Four Layers:
+
+    From the inside out, the layers are:
+
+    4/Content: Where text, images, or other elements appear.
+    3/Padding: The transparent space inside the box, between the content and the border. It grows the 
+              background color of the element. (Inside the content )
+    2/Border: The line that wraps around the padding and content (can be thin, thick, dashed, etc.).
+    1/Margin: The transparent space outside the box. It creates distance between this element and
+            its neighbors. (Not visible)
+
+-- Margin: "Clockwise"
+            Always define from top :
+                    margin: 10px 20px 15px 5px; 
+                    /* Top: 10, Right: 20, Bottom: 15, Left: 5 
+            
+            margin: 10px 20px 15px
+                1st Value (10px): Applies to the Top.
+                2nd Value (20px): Applies to both the Left and Right sides.
+                3rd Value (15px): Applies to the Bottom. 
+            margin: 10px 20px;
+            /* Top/Bottom: 10px | Left/Right: 20px */
+
+
+--x`
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/

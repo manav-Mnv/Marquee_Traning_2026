@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: black;
+}
+
+.main-header {
+    width: 95%;
+    padding: 10px 0px;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-header a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.main-header li {
+    list-style: none;
+}
+
+nav>ul,
+.side-nav>ul {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.s-icon {
+    padding: 15px;
+    border-radius: 50%;
+}
+
+.s-icon:hover {
+    background-color: rgba(255, 255, 255, 0.293);
+    transition: all .3s ease;
+}
